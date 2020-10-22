@@ -2,7 +2,6 @@ C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\appsettings.Developme
 C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\appsettings.json
 C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\aspnetcore-cqrs.StaticWebAssets.xml
-C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\app.db
 C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\aspnetcore-cqrs.exe
 C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\aspnetcore-cqrs.deps.json
 C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\aspnetcore-cqrs.runtimeconfig.json
@@ -189,3 +188,6 @@ C:\projects\dotnet\aspnetcore-cqrs\obj\Debug\netcoreapp3.1\staticwebassets\aspne
 C:\projects\dotnet\aspnetcore-cqrs\obj\Debug\netcoreapp3.1\aspnetcore-cqrs.dll
 C:\projects\dotnet\aspnetcore-cqrs\obj\Debug\netcoreapp3.1\aspnetcore-cqrs.pdb
 C:\projects\dotnet\aspnetcore-cqrs\obj\Debug\netcoreapp3.1\aspnetcore-cqrs.genruntimeconfig.cache
+C:\projects\dotnet\aspnetcore-cqrs\bin\Debug\netcoreapp3.1\app.db
+C:\projects\dotnet\aspnetcore-cqrs\obj\Debug\netcoreapp3.1\Razor\Views\People\Create.cshtml.g.cs
+C:\projects\dotnet\aspnetcore-cqrs\obj\Debug\netcoreapp3.1\Razor\Views\People\Index.cshtml.g.cs

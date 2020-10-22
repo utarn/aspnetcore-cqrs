@@ -9334,11 +9334,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\projects\\dotnet\\aspnetcore-cqrs\\aspnetcore-cqrs.csproj",
+      "projectUniqueName": "C:\\projects\\dotnet\\aspnetcore-cqrs\\aspnetcore-cqrs.csproj",
       "projectName": "aspnetcore-cqrs",
-      "projectPath": "c:\\projects\\dotnet\\aspnetcore-cqrs\\aspnetcore-cqrs.csproj",
+      "projectPath": "C:\\projects\\dotnet\\aspnetcore-cqrs\\aspnetcore-cqrs.csproj",
       "packagesPath": "C:\\Users\\ooh\\.nuget\\packages\\",
-      "outputPath": "c:\\projects\\dotnet\\aspnetcore-cqrs\\obj\\",
+      "outputPath": "C:\\projects\\dotnet\\aspnetcore-cqrs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

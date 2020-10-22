@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using aspnetcore_cqrs.Mediator.Home.Queries.GetPingQuery;
+using aspnetcore_cqrs.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using aspnetcore_cqrs.Models;
 
 namespace aspnetcore_cqrs.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : MvcController
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -18,8 +19,10 @@ namespace aspnetcore_cqrs.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(GetPingQuery query)
         {
+            var result = await Mediator.Send(query);
+            ViewData["Model"] = result;
             return View();
         }
 
