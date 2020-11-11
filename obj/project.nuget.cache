@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "17uAlnDo6Rq1+LIletisQv87C/r47j1BdS5hWbL//Cn+DfdsPAS05U9fKu5CwHE1WtKMjgvNtoGo7566Oabo/Q==",
+  "dgSpecHash": "OzM9h10JS9igG7Q6HSCys3pnbwpuwOPF5aUpzykNLKgSiDgd1wVQDUuQM4+NCkVtk+Kz0+Lz7KWJJCAXUoeXwg==",
   "success": true,
   "projectFilePath": "C:\\projects\\dotnet\\aspnetcore-cqrs\\aspnetcore-cqrs.csproj",
   "expectedPackageFiles": [

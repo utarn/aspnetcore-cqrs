@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using aspnetcore_cqrs.Data;
+using aspnetcore_cqrs.Mediator;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
@@ -31,13 +32,23 @@ namespace aspnetcore_cqrs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddDbContext<ApplicationDbContext>(options =>
                options.UseSqlite(
                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>(options =>
+            {
+                options.SignIn.RequireConfirmedAccount = true;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 6;
+            })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformanceBehavior<,>));
             services.AddControllersWithViews()
                 .AddFluentValidation();
             services.AddRazorPages();
